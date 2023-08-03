@@ -9,7 +9,7 @@ const server = http.createServer(app)
 const socketio = require('socket.io')
 
 const port = process.env.PORT || 3000
-const publicDirectoryPath = path.join(__dirname, '../public')
+const publicDirectoryPath = path.join(__dirname, '../docs')
 const io = socketio(server)
 
 app.use(express.static(publicDirectoryPath))
